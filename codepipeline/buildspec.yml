@@ -30,5 +30,5 @@ phases:
       - printf '[{"name":"%s","imageUri":"%s"}]' $ECR_REPOSITORY_NAME $IMAGE_URI > imagedefinitions.json
 artifacts:
   files:
-    - imagedefinitions.json
+    - codepipeline/imagedefinitions.json
   discard-paths: yes
