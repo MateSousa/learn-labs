@@ -9,5 +9,5 @@
 
 # CI/CD Pipeline
 
-![CI/CD Pipeline](https://github.com/MateSousa/learn-labs/blob/master/codepipeline/Catpipeline.png
+![CI/CD Pipeline](https://github.com/MateSousa/learn-labs/blob/master/codepipeline/Catpipeline.png)
 
