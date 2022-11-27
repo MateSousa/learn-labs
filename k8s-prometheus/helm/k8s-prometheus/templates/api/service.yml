@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apiserver
+  labels:
+    app: apiserver
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+    protocol: TCP
+  selector:
+    app: apiserver
+---
+apiVersion: v1  
+kind: Service
+metadata:
+  name: apiserver-lb
+  labels:
+    app: apiserver
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3001
+    nodePort: 30000
+  selector:
+    app: apiserver
